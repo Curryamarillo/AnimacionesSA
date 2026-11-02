@@ -28,6 +28,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -39,6 +40,7 @@ import com.example.animacionessa.ui.theme.splash
 @Composable
 fun ExpandableAnimationScreen() {
 
+    // Expanded controla la apertura a tamaño completo de la letra de la canción
     var expanded by rememberSaveable { mutableStateOf(false) }
 
     Column(
@@ -72,7 +74,7 @@ fun ExpandableAnimationScreen() {
             ) {
                 Text(
                     modifier = Modifier.padding(8.dp),
-                    text = "Tombstone blues",
+                    text = stringResource(R.string.tombstone_blues),
                     fontWeight = FontWeight.Bold,
                     fontSize = 25.sp,
                     color = MaterialTheme.splash.ring3)
@@ -82,13 +84,15 @@ fun ExpandableAnimationScreen() {
                 modifier = Modifier.padding(start = 16.dp),
                 color = MaterialTheme.colorScheme.onBackground,
                 fontSize = 20.sp,
-                text = "Bob Dylan (Highway 61 Revisited), 1968")
+                text = stringResource(R.string.bob_dylan_highway_61_revisited_1968)
+            )
+            // El textbutton controla el valor de expanded
             TextButton(
                 onClick = {expanded = !expanded}) {
                 Text(
                     modifier = Modifier.padding(start = 6.dp),
                     fontSize = 18.sp,
-                    text = if (expanded) "Menos." else "Leer más...",
+                    text = if (expanded) stringResource(R.string.menos) else stringResource(R.string.leer_mas),
                     color = MaterialTheme.colorScheme.onBackground
                 )
             }
@@ -98,66 +102,7 @@ fun ExpandableAnimationScreen() {
                     modifier = Modifier.padding(8.dp),
                     color = MaterialTheme.colorScheme.onBackground,
                     textAlign = TextAlign.Justify,
-                    text = "Well, the sweet pretty things are in bed now, of course\n" +
-                            "City fathers they're trying to endorse\n" +
-                            "The reincarnation of Paul Revere's horse\n" +
-                            "But the town has no need to be nervous\n" +
-                            "The ghost of Belle Starr, she hands down her wits\n" +
-                            "To Jezebel the nun, she violently knits\n" +
-                            "A bald wig for Jack the ripper, who sits\n" +
-                            "At the head of the Chamber of Commerce\n" +
-                            "Mama's in the factory\n" +
-                            "She ain't got no shoes\n" +
-                            "Daddy's in the alley lookin' for the fuse\n" +
-                            "I'm in the kitchen with the tombstone blues\n" +
-                            "The hysterical bride in the penny arcade\n" +
-                            "Screaming, she moans, \"I've just been made\"\n" +
-                            "Sends for the doctor, who pulls down the shade\n" +
-                            "Say my advice is to not let the boys in\n" +
-                            "Now, the medicine man comes and he shuffles inside\n" +
-                            "He walks with a swagger, and he says to the bride\n" +
-                            "\"Stop all this weeping, swallow your pride\n" +
-                            "You won't die, it's not poison\"\n" +
-                            "Mama's in the factory\n" +
-                            "She ain't got no shoes\n" +
-                            "Daddy's in the alley lookin' for the fuse\n" +
-                            "I'm in the kitchen with the tombstone blues\n" +
-                            "John the Baptist, after torturing a thief\n" +
-                            "Looks up at his hero, the Commander-in-Chief\n" +
-                            "Saying, \"Tell me, great hero, but please, make it brief\n" +
-                            "Is there a hole for me to get sick in?\"\n" +
-                            "The Commander-in-Chief answers him while chasing a fly\n" +
-                            "Saying, \"Death to all those who would whimper and cry\"\n" +
-                            "And dropping a barbell, he points to the sky\n" +
-                            "Saying, \"The sun's not yellow, it's chicken\"\n" +
-                            "Mama's in the factory\n" +
-                            "She ain't got no shoes\n" +
-                            "Daddy's in the alley lookin' for the fuse\n" +
-                            "I'm in the kitchen with the tombstone blues\n" +
-                            "The geometry of innocent flesh on the bone\n" +
-                            "Causes Galileo's maths book to get thrown\n" +
-                            "At Delilah who's sitting worthlessly alone\n" +
-                            "But the tears on her cheeks are from laughter\n" +
-                            "I wish I could give Brother Bill his great thrill\n" +
-                            "I've set him in chains at the top of the hill\n" +
-                            "Send them out for some pillars and Cecil B. DeMille\n" +
-                            "He could die happily ever after\n" +
-                            "Mama's in the factory\n" +
-                            "She ain't got no shoes\n" +
-                            "Daddy's in the alley lookin' for the fuse\n" +
-                            "I'm in the kitchen with the tombstone blues\n" +
-                            "Where Ba Rainey and Beethoven once unwrapped their bedroll\n" +
-                            "Tuba players now, rehearse around the flagpole\n" +
-                            "And the National Bank at a profit sells road maps for the soul\n" +
-                            "To the old folks home and the college\n" +
-                            "I wish I could write you a melody so plain\n" +
-                            "That could hold you dear lady from going insane\n" +
-                            "That can ease you, cool you, and cease the pain\n" +
-                            "Of your useless and pointless knowledge\n" +
-                            "Mama's in the factory\n" +
-                            "She ain't got no shoes\n" +
-                            "Daddy's in the alley lookin' for the fuse\n" +
-                            "I'm in the kitchen with the tombstone blues\n"
+                    text = stringResource(R.string.letra_cancion)
                 )
             }
         }

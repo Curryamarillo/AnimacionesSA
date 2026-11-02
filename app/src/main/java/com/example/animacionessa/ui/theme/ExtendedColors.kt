@@ -18,6 +18,7 @@ data class SplashColors(
     val titleFront: Color, val titleMid: Color, val titleBack: Color
 )
 
+// Colores extendidos
 val LightSplashColors = SplashColors(
     ring1 = Primary30,
     ring2 = Accent50,

@@ -36,10 +36,15 @@ import kotlin.time.Duration.Companion.seconds
 
 @Composable
 fun SplashScreen(navController: NavController) {
-    val isDarkTheme = isSystemInDarkTheme()
 
+    // Booleano que controla el tema light/dark
+    val isDarkTheme: Boolean = isSystemInDarkTheme()
+
+    // If que controla la background image
     val backgroundImage = if (!isDarkTheme) R.drawable.splash_bg_light else R.drawable.splash_bg_dark
 
+    // LaunchedEffect que controla el tiempo de la Splash en pantalla, que no se pueda volver
+    // y la ruta a donde sigue, Home
     LaunchedEffect(key1 = true) {
         delay(5.seconds)
         navController.popBackStack()
@@ -65,7 +70,7 @@ fun SplashScreen(navController: NavController) {
             ) {
                 Text(
                     modifier = Modifier.offset(y = 50.dp),
-                    text = "Bienvenidos",
+                    text = stringResource(R.string.bienvenidos),
                     fontSize = 50.sp,
                     fontFamily = FontFamily(Font(R.font.spicy_rice)),
                     color = MaterialTheme.splash.titleFront,

@@ -60,6 +60,7 @@ fun CounterAnimationScreen() {
 
                 )
             }
+            // Aquí se define el comportamiento del contenido animado
             AnimatedContent(
                 targetState = times,
                 transitionSpec = {

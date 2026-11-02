@@ -45,19 +45,18 @@ fun ColorAnimationScreen() {
         content = {
             Icon(
                 modifier = Modifier
-                    .clickable{
+                    .clickable {
                         animatedColor = !animatedColor
                     }
                     .padding(20.dp)
-                    .size(200.dp)
-                ,
+                    .size(200.dp),
                 imageVector = Icons.Filled.ThumbUp,
                 contentDescription = "thumb up",
                 tint = fontColor
             )
             Text(
                 modifier = Modifier
-                    .clickable{
+                    .clickable {
                         animatedColor = !animatedColor
                     }
                     .padding(20.dp),

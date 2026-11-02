@@ -1,4 +1,83 @@
 <resources>
     <string name="app_name">AnimacionesSA</string>
     <string name="background_image_light">Background image</string>
+    <string name="animaciones">Animaciones:</string>
+    <string name="color">Color</string>
+    <string name="alpha">Alpha</string>
+    <string name="visibility">Visibility</string>
+    <string name="counter">Counter</string>
+    <string name="crossfade">Crossfade</string>
+    <string name="expandable">Expandable</string>
+    <string name="bienvenidos">Bienvenidos</string>
+    <string name="imagen_de_los_stones">Imagen de los Stones</string>
+    <string name="imagen_de_the_beatles">Imagen de The Beatles</string>
+    <string name="imagen_de_beach_boys">Imagen de Beach Boys</string>
+    <string name="tombstone_blues">Tombstone blues</string>
+    <string name="bob_dylan_highway_61_revisited_1968">Bob Dylan (Highway 61 Revisited), 1968</string>
+    <string name="menos">Menos.</string>
+    <string name="leer_mas">Leer más…</string>
+    <string name="letra_cancion">"Well, the sweet pretty things are in bed now, of course
+City fathers they're trying to endorse\n
+The reincarnation of Paul Revere's horse\n
+But the town has no need to be nervous\n
+The ghost of Belle Starr, she hands down her wits\n
+To Jezebel the nun, she violently knits\n
+A bald wig for Jack the ripper, who sits\n
+At the head of the Chamber of Commerce\n
+Mama's in the factory\n
+She ain't got no shoes\n
+Daddy's in the alley lookin' for the fuse\n
+I'm in the kitchen with the tombstone blues\n
+The hysterical bride in the penny arcade\n
+Screaming, she moans, \"I've just been made\"\n
+Sends for the doctor, who pulls down the shade\n
+Say my advice is to not let the boys in\n
+Now, the medicine man comes and he shuffles inside\n
+He walks with a swagger, and he says to the bride\n
+\"Stop all this weeping, swallow your pride\n
+You won't die, it's not poison\"\n
+Mama's in the factory\n
+She ain't got no shoes\n
+Daddy's in the alley lookin' for the fuse\n
+I'm in the kitchen with the tombstone blues\n
+John the Baptist, after torturing a thief\n
+Looks up at his hero, the Commander-in-Chief\n
+Saying, \"Tell me, great hero, but please, make it brief\n
+Is there a hole for me to get sick in?\"\n
+The Commander-in-Chief answers him while chasing a fly\n
+Saying, \"Death to all those who would whimper and cry\"\n
+And dropping a barbell, he points to the sky\n
+Saying, \"The sun's not yellow, it's chicken\"\n
+Mama's in the factory\n
+She ain't got no shoes\n
+Daddy's in the alley lookin' for the fuse\n
+I'm in the kitchen with the tombstone blues\n
+The geometry of innocent flesh on the bone\n
+Causes Galileo's maths book to get thrown\n
+At Delilah who's sitting worthlessly alone\n
+But the tears on her cheeks are from laughter\n
+I wish I could give Brother Bill his great thrill\n
+I've set him in chains at the top of the hill\n
+Send them out for some pillars and Cecil B. DeMille\n
+He could die happily ever after\n
+Mama's in the factory\n
+She ain't got no shoes\n
+Daddy's in the alley lookin' for the fuse\n
+I'm in the kitchen with the tombstone blues\n
+Where Ba Rainey and Beethoven once unwrapped their bedroll\n
+Tuba players now, rehearse around the flagpole\n
+And the National Bank at a profit sells road maps for the soul\n
+To the old folks home and the college\n
+I wish I could write you a melody so plain\n
+That could hold you dear lady from going insane\n
+That can ease you, cool you, and cease the pain\n
+Of your useless and pointless knowledge\n
+Mama's in the factory\n
+She ain't got no shoes\n
+Daddy's in the alley lookin' for the fuse\n
+I'm in the kitchen with the tombstone blues"
+</string>
+    <string name="beatles_pop_art">Beatles pop art</string>
+    <string name="presione">Presione</string>
+    <string name="volver">Volver</string>
 </resources>

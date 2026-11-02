@@ -21,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -40,13 +41,14 @@ fun VisibilityAnimationScreen() {
                 Image(
                     modifier = Modifier
                         .size(550.dp)
+                        // Tanto la imagen como el texto modifican la visibilidad
                         .clickable {
                             visible = !visible
                         }
                         .clip(RoundedCornerShape(16.dp)),
                     contentScale = ContentScale.Fit,
                     painter = painterResource(id = R.drawable.hendrix_poster_psicodelico),
-                    contentDescription = "Beatles pop art"
+                    contentDescription = stringResource(R.string.beatles_pop_art)
                 )
             }
             Text(
@@ -55,7 +57,7 @@ fun VisibilityAnimationScreen() {
                         visible = !visible
                     }
                     .padding(20.dp),
-                text = "Presione",
+                text = stringResource(R.string.presione),
                 fontSize = 30.sp,
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.splash.ring1

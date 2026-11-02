@@ -1,6 +1,5 @@
 package com.example.animacionessa.ui.screens
 
-import android.media.Image
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
